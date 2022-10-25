@@ -1,3 +1,30 @@
-img{
+.conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logoA{
     width: 150px;
+}
+.redes{
+    margin-right: 0.5em;
+}
+img{
+    width: 40px;
+    padding: 5px;
+}
+
+/*----- Para la vista en telf -----*/
+@media(max-width: 575px){
+    .conteiner{
+        flex-direction: column;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes img{
+        margin: 0.2em;
+    }
 }
